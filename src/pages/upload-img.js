@@ -25,7 +25,7 @@ const UploadImg = () => {
 
     console.log(formdata)
     axios
-      .post("https://4p1e2zswzg.execute-api.us-east-1.amazonaws.com/test/api/upload", formdata)
+      .post("http://localhost:8080/api/upload", formdata)
       .then(function ({ status }) {
         if (status === 201) {
           setIsUpload(true);
